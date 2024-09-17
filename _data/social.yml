@@ -1,6 +1,7 @@
-- title: Twitter
-  url: https://twitter.com/ngzhio
-  icon: fab fa-twitter
 - title: GitHub
-  url: https://github.com/ngzhio/jekyll-theme-hamilton
+  url: https://github.com/EtiNL
   icon: fab fa-github
+
+- title: Business card
+  url: https://github.com/EtiNL/my-business-card/releases/download/v1.0.4/card.pdf
+  icon: fas fa-file-pdf
