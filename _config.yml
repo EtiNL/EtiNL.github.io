@@ -4,6 +4,8 @@ author: Etienne Lanzeray
 avatar: /Avatar.png
 email: etienne.lanzeray@gmail.com
 
+skin: midnight
+
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
@@ -12,23 +14,22 @@ plugins:
 
 paginate: 10
 
-# Uncomment the below line and set the tracking ID for enabling Google Analytics
-# 
-# google_analytics: 
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: null   # let MathJax v3 handle TeX delimiters itself
+  auto_ids: true
+  toc_levels: "2..3"
 
-# Uncomment the below lines and set the Disqus shortname for enabling Disqus
-# 
-# disqus:
-
-# Jekyll
-# ======
 exclude:
   - scripts/
   - README.md
   - jekyll-theme-hamilton.gemspec
+  - vendor/**
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
 
-# Jekyll SEO Tag (Optional)
-# =========================
 logo: Avatar.png
 social:
   name: Etienne Lanzeray

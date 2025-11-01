@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
   <head>
     {% include head.html %}
   </head>
+
+  {% if page.math %}
+  <script>if (window.MathJax && MathJax.typeset) { MathJax.typeset(); }</script>
+  {% endif %}
 
   <body>
     <div class="site-container">
       <header class="site-header">
         {% include header.html %}
       </header>
-      
+
       <div class="site-body wrapper">
         <aside class="site-sidebar" id="site-sidebar">
           {% if page.toc %}
@@ -19,6 +22,7 @@
             {% include sidebar.html %}
           {% endif %}
         </aside>
+
         <main class="site-main" id="site-main" aria-label="Content" tabindex="1">
           {{ content }}
           <footer class="site-footer">
@@ -27,6 +31,28 @@
         </main>
       </div>
     </div>
-  </body>
 
+    <!-- Mermaid.js support -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Rewrite fenced ```mermaid blocks wrapped by Kramdown/Rouge
+        document.querySelectorAll('pre > code.language-mermaid').forEach(function (code) {
+          var pre = code.parentElement;
+          var div = document.createElement('div');
+          div.className = 'mermaid';
+          div.textContent = code.textContent.trim();
+          pre.replaceWith(div);
+        });
+
+        if (window.mermaid) {
+          mermaid.initialize({
+            startOnLoad: true,
+            securityLevel: 'loose',
+            theme: 'dark'
+          });
+        }
+      });
+    </script>
+  </body>
 </html>
