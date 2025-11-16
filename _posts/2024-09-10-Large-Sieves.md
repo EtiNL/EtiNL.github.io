@@ -24,7 +24,7 @@ Summary of my 2017–2018 pure mathematics M1 research project (Université Pari
 
 ## Goal
 
-Study the **additive analytic large sieve** and apply it to problems of equidistribution in number theory. Compare classical bounds (Gallagher) to the sharp form (Selberg). Derive arithmetic corollaries.
+Study the **additive analytic large sieve** and aapply it to problems of equidistribution in number theory. Compare classical bounds (Gallagher) to the sharp form (Selberg). Derive arithmetic corollaries.
 
 ## TLDR
 
@@ -53,7 +53,7 @@ Pick points $\alpha_1,\dots,\alpha_R$ on the circle that are **$\delta$-separate
 How large can
 
 $$
-\sum_{r=1}^R |S(\alpha_r)|^2
+\sum_{r=1}^{R} |S(\alpha_r)|^2
 $$
 
 be, compared to $\sum |a_n|^2$?
