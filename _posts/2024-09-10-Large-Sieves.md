@@ -14,7 +14,7 @@ Summary of my 2017–2018 pure mathematics M1 research project (Université Pari
   <img src="/assets/img/Large_sieve/Complex_zeta.jpg" alt="Zeta function" width="60%">
 </p>
 
-[Download the full report (PDF) (in french)]({{ "/assets/pdf/Le_grand_crible__sa_forme_analytique" | relative_url }})
+[Download the full report (PDF) (in french)]({{ "/assets/pdf/Le_grand_crible__sa_forme_analytique.pdf" | relative_url }})
 
 ## Context
 
