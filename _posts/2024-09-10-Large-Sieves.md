@@ -8,13 +8,13 @@ math: true
 toc: true
 ---
 
-Summary of my 2017–2018 pure mathematics M1 research project (Université Paris Saclay) under the supervision of Etienne Fouvry (Institut de Mathématiques d'Orsay).
+Summary of my 2017–2018 pure mathematics M1 research project (Université Paris Saclay).
 
 <p align="center">
-  <img src="/assets/img/Large_sieve/Complex_zeta.jpg" alt="Menger sponge" width="60%">
+  <img src="/assets/img/Large_sieve/Complex_zeta.jpg" alt="Zeta function" width="60%">
 </p>
 
-[Download the full report (PDF) (in french)]({{ "/assets/pdf/Le_grand_crible__sa_forme_analytique_additive_et_quelques_applications_à_la_théorie_des_nombres_vspace_2cm.pdf" | relative_url }})
+[Download the full report (PDF) (in french)]({{ "/assets/pdf/Le_grand_crible__sa_forme_analytique" | relative_url }})
 
 ## Context
 
