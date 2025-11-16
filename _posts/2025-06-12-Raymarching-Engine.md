@@ -13,6 +13,7 @@ I’ve been building a compact real-time renderer from scratch as a personnal pr
   <img src="/assets/img/Xor_engine/Xor_menger.png" alt="Menger sponge" width="90%">
 </p>
 
+**Code:** [github.com/EtiNL/xor_engine](https://github.com/EtiNL/xor_engine)
 
 ## TLDR
 
