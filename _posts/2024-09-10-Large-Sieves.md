@@ -18,7 +18,6 @@ Summary of my 2017–2018 pure mathematics M1 research project (Université Pari
 
 ## Context
 
-- Authors: **Étienne Lanzeray**, **Lucas Prabel**, 
 - Program: **M1 Jacques Hadamard**, Université Paris Saclay, 2017–2018.  
 - Supervisor: **Étienne Fouvry** (Emeritus Professor), Institut de Mathématiques d'Orsay.  
 - Core sources: Montgomery (1978) *The analytic principle of the large sieve*; Bombieri (Cours au Collège de France, 1973).
