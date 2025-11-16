@@ -7,9 +7,9 @@ tags: [rust, cuda, graphics, ecs, sdl2, csg, sdf, ray marching]
 toc: true
 ---
 
-Building a real-time renderer that can generate complex procedural geometry entirely on the GPU—that's been my goal with this project. The result is a compact engine that combines Rust's safety with CUDA's raw performance to render scenes defined purely by mathematical functions.
+This article is an overview of a personal rendering project I've been working on: a real-time ray marching engine that renders procedural geometry entirely on the GPU. The implementation combines Rust for safe host-side code with custom CUDA kernels for parallel evaluation of signed distance functions.
 
-This project was inspired by the pioneering work of Inigo Quilez, whose research on distance functions and ray marching techniques has been instrumental in bringing procedural rendering to real-time graphics. 
+This project was inspired by the work of Inigo Quilez, whose research on distance functions and ray marching techniques has been instrumental in bringing procedural rendering to real-time graphics. 
 
 <p align="center">
   <img src="/assets/img/Xor_engine/Xor_menger.png" alt="Menger sponge" width="90%">
@@ -203,18 +203,6 @@ The entire evaluation happens in registers with no recursion. For trees with N l
 
 For trees with more than 64 leaves that are union-only (common for scattered objects), I fall back to a simple linear min-reduction since there's no gradient tracking needed.
 
-### Gradient Sign Tracking
-
-Here's a subtle detail: CSG operations can flip normals. When you use **Difference**, you're inverting one operand's distance field—which also inverts its gradient.
-
-I track a `grad_sign` multiplier through the CSG evaluation. Union and Intersection preserve it (+1), but Difference flips it for the subtracted operand (-1). When computing the final normal:
-
-```cuda
-Vec3 normal = evaluate_grad_sdf(obj, hit_point, center) * grad_sign;
-```
-
-This ensures lighting stays correct even for complex boolean combinations.
-
 ---
 
 ## Space Folding: Infinite Repetition
@@ -305,34 +293,6 @@ When a component changes:
 2. `update_scene()` detects dirty entities
 3. The corresponding `GpuT` struct is rebuilt and uploaded to its slot
 4. Dirty flags are cleared
-
-For example, when a transform changes:
-
-```rust
-// Mark dirty (automatic on get_mut)
-if let Some(transform) = world.transforms.get_mut(entity) {
-    transform.position = new_pos;  // Marks dirty
-}
-
-// Later in update_scene():
-for (_, entity_idx) in world.transforms.iter_dirty() {
-    let entity = Entity { index: entity_idx, generation: ... };
-    let transform = world.transforms.get(entity).unwrap();
-    
-    // Does this entity have an SDF? Update its GPU representation
-    if let Some(sdf) = world.sdf_bases.get(entity) {
-        let gpu_slot = world.sdf_gpu_indices.get_or_allocate_for(entity);
-        let gpu_sdf = GpuSdfObjectBase {
-            center: transform.position,
-            u: transform.rotation * Vec3::X,
-            v: transform.rotation * Vec3::Y,
-            w: transform.rotation * Vec3::Z,
-            // ... other fields
-        };
-        world.gpu_sdf_objects.push(gpu_slot, &gpu_sdf)?;
-    }
-}
-```
 
 This means:
 - Only changed entities trigger GPU uploads
