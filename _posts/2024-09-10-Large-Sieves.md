@@ -29,7 +29,7 @@ Study the **additive analytic large sieve** and apply it to problems of equidist
 
 ## TLDR
 
-The **large sieve** is a single inequality about exponential sums. If you sample a trigonometric sum at many **well-spaced points**, the total energy you see cannot exceed about
+The **analytic additive form of the large sieve** is a single inequality about exponential sums. If you sample a trigonometric sum at many **well-spaced points**, the total energy you see cannot exceed about
 
 $$
 N \;+\; \delta^{-1}
@@ -37,7 +37,7 @@ $$
 
 times the energy of its coefficients.  
 Here $N$ is the length of the sum and $\delta$ is the minimal spacing between sample points.  
-From that one bound you can quickly prove useful facts about equidistribution, least quadratic non-residues, and the density of primes in arithmetic progressions.
+From that one bound you can prove useful facts about equidistribution, least quadratic non-residues, and the density of primes in arithmetic progressions.
 
 ---
 
@@ -89,10 +89,10 @@ The right-hand side $N+\delta^{-1}$ matches both pressures.
 
 ---
 
-## Intuition without formulas
+## Intuition
 
-Think of $S(\alpha)$ as a **radio signal** built from $N$ consecutive frequencies.  
-Sampling at many **well-separated** dials $\alpha_r$ cannot reveal more total power than what is actually present in the coefficients. The term $N$ is “how many notes are playing”, the term $\delta^{-1}$ is “how densely you probe the dial”.
+$S(\alpha)$ can be seen as a **radio signal** built from $N$ consecutive frequencies.  
+Sampling at many **well-separated** dials $\alpha_r$ cannot reveal more total power than what is actually present in the coefficients.The term $N$ is the number of frequencies, the term $\delta^{-1}$ is “how densely you probe the dial”.
 
 ---
 

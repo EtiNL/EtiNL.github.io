@@ -356,17 +356,10 @@ In contrast, the MLP’s error increases more rapidly, showing that the hNN gene
 
 ---
 
-## 5. Perspectives and acknowledgments
-
-### Limitations and perspectives
+## 5. Limitations & Perspectives
 
 The generalization bound can likely be sharpened using more recent Rademacher-based results.  
 On the empirical side, testing on other tasks with known scaling laws is a natural next step, for instance, in **homogeneous control**, or by adapting the framework to **Homogeneous Galerkin projection to solve PDEs** [^futur] (as done in Galerkin Neural Networks).
-
-### Acknowledgments
-
-I am deeply grateful to my supervisors **Mihaly Petreczky** (CRIStAL, CNRS) and **Andrey Polyakov** (CRIStAL, Inria) for their guidance, patience, and insightful discussions.  
-I also thank the CRIStAL / Université de Lille environment for providing a stimulating research setting, and the fellow interns and PhD students who offered valuable feedback on both the theoretical and implementation aspects.
 
 
 [^futur]: This will be the focus of my Master 2 research project, which explores applying homogeneous neural networks to fluid mechanics models through **homogeneous Galerkin projection**.

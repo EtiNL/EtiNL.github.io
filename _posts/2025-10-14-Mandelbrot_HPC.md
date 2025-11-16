@@ -15,9 +15,9 @@ This post summarizes a project completed for my M2 High Performance Computing cl
 [Download the full report (PDF)]({{ "/assets/pdf/report_mandelbrot_project.pdf" | relative_url }})
 
 ## TLDR
-- Sequential baseline renders a $1000\times1000$ image in $\approx 2.31\,\text{s}$.
-- Static 1D MPI decomposition hits load imbalance near the set boundary and stalls at $\approx 2.34\times$ with 8 ranks.
-- Master–Worker MPI removes the imbalance and reaches $\approx 6.70\times$ speedup on 9 ranks (8 workers), with efficiency $\approx (p-1)/p$.
+- Sequential baseline (1 process) renders a $1000\times1000$ image in $\approx 2.31\,\text{s}$.
+- Static 1D MPI decomposition hits load imbalance near the set boundary and stalls at $\approx 2.34\times$ with 8 processes.
+- Master–Worker MPI removes the imbalance and reaches $\approx 6.70\times$ speedup on 9 processes (8 workers), with efficiency $\approx (p-1)/p$.
 - A single CUDA kernel renders the same image in $\approx 4.48\,\text{ms}$, $>100\times$ faster than MPI‑8 and $>700\times$ over the CPU baseline.
 
 ---
