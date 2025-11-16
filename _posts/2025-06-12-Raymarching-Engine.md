@@ -90,9 +90,9 @@ for each pixel:
         t += distance  # Safe step: we can move this far without hitting anything
 ```
 
-The magic is in that last line: `t += distance`. The SDF tells us the minimum safe distance we can step. We can't overshoot because we know nothing is closer than that distance.
+The SDF tells us the minimum safe distance we can step. We can't overshoot because we know nothing is closer than that distance.
 
-This makes sphere tracing **self-adaptive**—it takes large steps in empty space and tiny steps near surfaces, automatically handling detail without any explicit LOD system.
+This makes sphere tracing **self-adaptive**—it takes large steps in empty space and tiny steps near surfaces, automatically handling detail.
 
 ### The Implementation
 
@@ -254,42 +254,6 @@ fn fold(p: Vec3, folding: SpaceFolding) -> Vec3 {
     p + Vec3(kx, ky, kz) * folding.lattice_basis
 }
 ```
-
-### Example: Menger Sponge Showcase
-
-The Menger sponge image at the top uses 3D space folding. A single CSG tree (sphere carved with boxes) is repeated on a 3D grid. By varying the lattice spacing per axis, you can create anisotropic repetitions.
-
-Here's the folding setup for that scene:
-
-```rust
-let fold_u = 16.0;  // spacing along U axis
-let fold_v = 16.0;  // spacing along V axis  
-let fold_w = 28.0;  // spacing along W axis
-
-let basis = Mat3::from_cols(
-    Vec3::new(fold_u, 0.0, 0.0),
-    Vec3::new(0.0, fold_v, 0.0),
-    Vec3::new(0.0, 0.0, fold_w),
-);
-
-world.insert_space_folding(tree_entity, SpaceFolding::new_3d(basis));
-```
-
-The GPU evaluates this once per march step:
-
-```cuda
-Vec3 center = src.center;  // Original object position
-
-if (folding_id != INVALID) {
-    Vec3 lc = (p - center) * folding.lattice_basis_inv;
-    Vec3 k = round_active_axes(lc, folding.active_mask);
-    center = center + k * folding.lattice_basis;  // Shift to nearest cell
-}
-
-float d = evaluate_sdf(obj, p, center);
-```
-
-This shifts the object center to the nearest lattice cell before evaluation. The result: infinite copies with zero memory overhead.
 
 ### Safety Thickness
 
@@ -653,7 +617,7 @@ The ECS already has stubs for `RigidBody` and `Constraint` components. Integrati
 
 ---
 
-## Lessons Learned
+## Observations
 
 ### What Worked Well
 
@@ -692,13 +656,10 @@ Controls:
 - **Space**: Move forward
 - **Esc**: Exit
 
-The code is MIT licensed—feel free to use it as a reference or starting point for your own experiments. I'd love to see what you build with it!
 
 ---
 
 ## References and Inspiration
-
-This project stands on the shoulders of giants, particularly:
 
 **Inigo Quilez** — [iquilezles.org](https://iquilezles.org/)
 - [Distance Functions Library](https://iquilezles.org/articles/distfunctions/) — Comprehensive collection of SDF primitives
@@ -706,8 +667,5 @@ This project stands on the shoulders of giants, particularly:
 - [SDF Bounding Volumes](https://iquilezles.org/articles/sdfbounding/) — Acceleration techniques for complex scenes
 - [Smooth Minimum](https://iquilezles.org/articles/smin/) — Advanced CSG blending operations
 
-Inigo's work at Pixar on procedural modeling and his decades of shader demos (Shadertoy, Demoscene) have made techniques like ray marching SDFs practical and accessible. His articles are the definitive resource for this rendering approach.
+Inigo Quilez's work at Pixar on procedural modeling and his decades of shader demos (Shadertoy, Demoscene) have made techniques like ray marching SDFs practical and accessible. His articles are the definitive resource for this rendering approach.
 
----
-
-*Questions? Find me on [GitHub](https://github.com/EtiNL) or open an issue on the repo.*
