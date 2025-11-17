@@ -1,25 +1,28 @@
-title: EtiNL blogpost
-description: A blog about my Data Science or personnal projects
+title: EtiNL website
+description: A website about my Data Science and personnal projects
 author: Etienne Lanzeray
 avatar: /Avatar.png
 email: etienne.lanzeray@gmail.com
-
 skin: midnight
+
 
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
-
 paginate: 10
-
 markdown: kramdown
 kramdown:
   input: GFM
   math_engine: null   # let MathJax v3 handle TeX delimiters itself
   auto_ids: true
   toc_levels: "2..3"
+
+# Navigation menu
+header_pages:
+  - index.md
+  - projects.md
 
 exclude:
   - scripts/
@@ -31,9 +34,5 @@ exclude:
   - Gemfile.lock
 
 logo: Avatar.png
-social:
-  name: Etienne Lanzeray
-  links:
-    - https://github.com/EtiNL
 google_site_verification: u4WXQl0Eu66rsQo2kRdCNx
 lang: en

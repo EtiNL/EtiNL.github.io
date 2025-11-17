@@ -1,3 +1,27 @@
+{% if site.avatar -%}
+  <div class="sidebar-section">
+    {%- if site.avatar contains "://" -%}
+      {%- assign avatar = site.avatar -%}
+    {%- else -%}
+      {%- assign avatar = site.avatar | relative_url -%}
+    {%- endif -%}
+    <a href="/">
+      <img src="{{ avatar }}" class="author-avatar u-photo align-center" alt="{{ site.author }}">
+    </a>
+    
+    <div style="margin-top: 1rem;">
+      <strong>
+        <a href="/index" style="font-size: 18px; font-weight: bold;">Home</a>
+      </strong>
+    </div>
+    <div style="margin-top: 1rem;">
+      <strong>
+        <a href="/projects" style="font-size: 18px; font-weight: bold;">Projects</a>
+      </strong>
+    </div>
+  </div>
+{%- endif %}
+
 <h3 class="toc-title">Table of Contents</h3>
 <nav class="toc-nav">
   {% include toc.html html=content h_min=2 h_max=3 class="toc" %}

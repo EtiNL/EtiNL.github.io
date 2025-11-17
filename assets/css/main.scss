@@ -2,11 +2,33 @@
 ---
 @import "hamilton/main";
 
+/* Make avatar bigger */
+.author-avatar {
+  width: 180px !important;
+  height: 180px !important;
+  max-width: 180px !important;
+  max-height: 180px !important;
+}
+
+/* Center social icons */
+.social-icons {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 1em !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+.social-icons li {
+  margin: 0 !important;
+}
+
 /* Sidebar left on all pages (home and posts) */
 .site-body.wrapper{
   display:flex;
   gap:2rem;
-  max-width:1300px;
+  // max-width:1300px;
   margin:0 auto;
   padding:0 1rem;
 }
@@ -19,12 +41,14 @@
   top:72px;
   align-self:flex-start;
   float:none !important;   /* kill theme float */
+  height: 100%;
+  padding-top: 2.5rem;
 }
 
 .site-main{
   order:1;                 /* right */
   flex:1 1 auto;
-  max-width:1200px;         /* keep the wider post */
+  max-width:1000px;         /* keep the wider post */
   min-width:0;
   margin:0 auto;
 }

@@ -4,9 +4,10 @@
 .site-container {
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: $base-font-size * 3 + 6px 1fr;
+  grid-template-rows: 1fr;
 }
 
 /**
