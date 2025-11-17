@@ -4,3 +4,51 @@
   1. Head over to https://realfavicongenerator.net/ to add your own favicons.
   2. Customize default _includes/custom-head.html in your source directory and insert the given code snippet.
 {% endcomment %}
+
+<script>
+// Make external links open in new tabs
+document.addEventListener('DOMContentLoaded', function() {
+  const links = document.querySelectorAll('a');
+  
+  links.forEach(link => {
+    const href = link.getAttribute('href');
+    
+    // Check if it's an external link
+    if (href && (href.startsWith('http://') || href.startsWith('https://'))) {
+      // Don't apply to links on your own domain
+      if (!href.includes(window.location.hostname)) {
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener noreferrer');
+      }
+    }
+  });
+});
+</script>
+
+<!-- Google Analytics 4 -->
+<!-- Replace G-XXXXXXXXXX with your actual Measurement ID from Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-71EJQ3JWMN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-71EJQ3JWMN');
+</script>
+
+<!-- Make external links open in new tabs -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const links = document.querySelectorAll('a');
+  
+  links.forEach(link => {
+    const href = link.getAttribute('href');
+    
+    if (href && (href.startsWith('http://') || href.startsWith('https://'))) {
+      if (!href.includes(window.location.hostname)) {
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener noreferrer');
+      }
+    }
+  });
+});
+</script>
