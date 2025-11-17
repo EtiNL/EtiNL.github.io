@@ -56,7 +56,11 @@ $$
 \sum_{r=1}^{R} |S(\alpha_r)|^2
 $$
 
-be, compared to $\sum |a_n|^2$?
+be, compared to 
+
+$$
+\sum |a_n|^2
+$$
 
 
 **Large sieve inequality (additive form).**  
