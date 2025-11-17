@@ -8,7 +8,7 @@ toc: true
 ---
 This post is a summary of my work during the M1 research project and internship at **CRIStAL (CNRS/Inria/Université de Lille)** under the supervision of **Andrey Polyakov** and **Mihaly Petreczky** on **homogeneous Neural Networks (hNNs)**.
 
-[Download the full report (PDF)]({{ "/assets/pdf/Lanzeray_Etienne_Internship_report.pdf" | relative_url }})
+[Download the full report (PDF)]({{ "/assets/pdf/Lanzeray_Etienne_Internship_report.pdf" | relative_url }}){:target="_blank"}
 
 **Code:** [github.com/EtiNL/HNN](https://github.com/EtiNL/HNN)
 
