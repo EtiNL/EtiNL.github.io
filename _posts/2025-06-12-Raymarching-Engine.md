@@ -9,6 +9,8 @@ toc: true
 
 This article is an overview of a personal rendering project I've been working on: a real-time ray marching engine that renders procedural geometry entirely on the GPU. The implementation combines Rust for safe host-side code with custom CUDA kernels for parallel evaluation of signed distance functions.
 
+Ultimately one of my goals for this project it to be able to run and render fluid simulations (with galerkin, homogeneous galerkin, galerkin neural network and homogeneous galerkin neural network)[^M2_RP] and render them using temporal Neural SDF (oubviously not in real-time). 
+
 This project was inspired by the work of Inigo Quilez, whose research on distance functions and ray marching techniques has been instrumental in bringing procedural rendering to real-time graphics. 
 
 <p align="center">
@@ -29,6 +31,7 @@ At its core, this is a **ray marching renderer** that evaluates implicit surface
 
 The entire pipeline runs on the GPU via custom CUDA kernels, orchestrated from a Rust host layer with an ECS architecture for scene management.
 
+[^M2_RP]: Which is the topic of my master 2 research project.
 ---
 
 ## The Core Idea: Signed Distance Functions
