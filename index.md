@@ -13,7 +13,7 @@ title: Home
   </div>
 </div>
 
-**[\[download CV\]](/assets/pdf/cv.pdf){:target="_blank"}**
+**[\[download CV\]](/assets/pdf/cv_lanzeray_etienne.pdf){:target="_blank"}**
 
 ## Research projects
 
