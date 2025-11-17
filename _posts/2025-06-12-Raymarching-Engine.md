@@ -11,11 +11,11 @@ This article is an overview of a personal rendering project I've been working on
 
 Ultimately one of my goals for this project it to be able to run and render fluid simulations (with galerkin, homogeneous galerkin, galerkin neural network and homogeneous galerkin neural network)[^M2_RP] and render them using temporal Neural SDF (oubviously not in real-time). 
 
-This project was inspired by the work of Inigo Quilez, whose research on distance functions and ray marching techniques has been instrumental in bringing procedural rendering to real-time graphics. 
-
 <p align="center">
   <img src="/assets/img/Xor_engine/Xor_menger.png" alt="Menger sponge" width="90%">
 </p>
+
+This project was inspired by the work of Inigo Quilez, whose research on distance functions and ray marching techniques has been instrumental in bringing procedural rendering to real-time graphics. 
 
 **Code:** [github.com/EtiNL/xor_engine](https://github.com/EtiNL/xor_engine)
 
