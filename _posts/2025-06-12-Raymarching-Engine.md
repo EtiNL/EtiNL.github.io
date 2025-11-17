@@ -32,6 +32,7 @@ At its core, this is a **ray marching renderer** that evaluates implicit surface
 The entire pipeline runs on the GPU via custom CUDA kernels, orchestrated from a Rust host layer with an ECS architecture for scene management.
 
 [^m2-rp]: Which is the topic of my master 2 research project.
+
 ---
 
 ## The Core Idea: Signed Distance Functions
