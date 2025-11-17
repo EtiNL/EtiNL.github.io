@@ -161,7 +161,7 @@ $$
 
   The numerator kills far-apart points; the denominator penalizes close ones.  
 - **Montgomery–Vaughan estimate.** Control bilinear forms with well-spaced $\alpha_r$, which delivers the $ \delta^{-1}$ part.  
-- **Parseval.** Converts integrals of $|S|^2$ to $\sum |a_n|^2$, giving the $N$ part.
+- **Parseval.** Converts integrals of $|S|^2$ to $\sum \|a_n\|^2$, giving the $N$ part.
 
 Gallagher first obtained $\Delta\le \delta^{-1}+\pi N$. Selberg sharpened it to $\Delta\le N+\delta^{-1}$, which is the right scale in general.
 
