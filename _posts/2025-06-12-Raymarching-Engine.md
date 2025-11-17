@@ -9,7 +9,7 @@ toc: true
 
 This article is an overview of a personal rendering project I've been working on: a real-time ray marching engine that renders procedural geometry entirely on the GPU. The implementation combines Rust for safe host-side code with custom CUDA kernels for parallel evaluation of signed distance functions.
 
-Ultimately one of my goals for this project it to be able to run fluid simulations (with galerkin, homogeneous galerkin, galerkin neural network and homogeneous galerkin neural network)[^M2_RP] and render them using temporal Neural SDF (oubviously not in real-time). 
+Ultimately one of my goals for this project it to be able to run fluid simulations (with galerkin, homogeneous galerkin, galerkin neural network and homogeneous galerkin neural network)[^m2-rp] and render them using temporal Neural SDF (oubviously not in real-time). 
 
 <p align="center">
   <img src="/assets/img/Xor_engine/Xor_menger.png" alt="Menger sponge" width="90%">
@@ -31,7 +31,7 @@ At its core, this is a **ray marching renderer** that evaluates implicit surface
 
 The entire pipeline runs on the GPU via custom CUDA kernels, orchestrated from a Rust host layer with an ECS architecture for scene management.
 
-[^M2_RP]: Which is the topic of my master 2 research project.
+[^m2-rp]: Which is the topic of my master 2 research project.
 ---
 
 ## The Core Idea: Signed Distance Functions
