@@ -63,7 +63,7 @@ be, compared to $\sum_{n=M+1}^{M+N} |a_n|^2$ ?
 For all choices above,
 
 $$
-\sum_{r=1}^R |S(\alpha_r)|^2 \;\le\; \Delta(N,\delta)\,\sum_{n=M+1}^{M+N} |a_n|^2,
+\sum_{r=1}^R |S(\alpha_r)|^2 \;\le\; \Delta(N,\delta)\,\sum_{n=M+1}^{M+N} \|a_n\|^2,
 $$
 
 with an optimal scale
