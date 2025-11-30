@@ -13,13 +13,9 @@ permalink: /coursework/
 [HPC Mandelbrot Set: MPI & CUDA](/2025/10/14/Mandelbrot_HPC.html)<br>
 Parallel implementation of Mandelbrot set visualization using both MPI for distributed computing and CUDA for GPU acceleration. This project was completed for my M2 High Performance Computing class.
 
----
-
 ## Sequential Decision Making and Reinforcement Learning
 
 - [Cascading Contextual Bandits on MovieLens 100K](/assets/pdf/coursework/Cascading_contextual_bandit.pdf){:target="_blank"}
-
----
 
 ## Reading Group
 Papers and presentations from our research reading group, exploring recent advances in Machine Learning:

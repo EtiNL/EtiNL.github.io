@@ -5,6 +5,7 @@ permalink: /personal_projects/
 ---
 
 # Personal Projects
+---
 
 - **[Rust + CUDA Ray-Marching Engine](/2025/06/12/Raymarching-Engine.html)**<br>
 Real-time ray marching engine that renders procedural geometry entirely on the GPU. Combines Rust for safe host-side code with custom CUDA kernels for parallel evaluation of signed distance functions.<br>
