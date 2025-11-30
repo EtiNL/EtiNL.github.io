@@ -9,7 +9,7 @@ toc: true
 This post summarizes a project completed for my M2 High Performance Computing class.
 
 <p align="center">
-  <img src="/assets/img/HPC_mandelbrot/mandel.png" alt="Mandelbrot set — cover" width="70%">
+  <img src="/assets/img/HPC_mandelbrot/mandel.png" alt="Mandelbrot set — cover" width="50%">
 </p>
 
 [Download the full report (PDF)]({{ "/assets/pdf/coursework/report_mandelbrot_project.pdf" | relative_url }}){:target="_blank"}

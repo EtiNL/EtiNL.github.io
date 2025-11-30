@@ -24,6 +24,7 @@ Studying generalization bounds and performance characteristics of homogeneous Ne
 [(post)](/2025/07/15/homogeneous-nn-internship.html)
 
 
+---
 
 ## Skills
 

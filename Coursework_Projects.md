@@ -28,5 +28,3 @@ Papers and presentations from our research reading group, exploring recent advan
 - [Algorithmic Recourse: from Counterfactual Explanations to Interventions (2020)](/assets/pdf/coursework/Algo_recourse.pdf){:target="_blank"}
 - [Certified Adversarial Robustness via Randomized Smoothing (2019)](/assets/pdf/coursework/Certified_Adversarial_Robustness.pdf){:target="_blank"}
 - [Accelerating Dense LLMs via L0-regularized Mixture-of-Experts](/assets/pdf/coursework/L0_MoE.pdf){:target="_blank"}
-
----
