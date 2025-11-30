@@ -13,7 +13,17 @@ Real-time ray marching engine that renders procedural geometry entirely on the G
 [GitHub](https://github.com/EtiNL/Evolution_generated_images)<br>
 Developed an evolutionary algorithm that recreates artwork through iterative particle placement, using CUDA-accelerated rendering to generate thousands of colored circles. <br>
 The algorithm employs depth-map-based candidate selection, bisection search for optimal radius determination, and fitness-based particle selection to minimize pixel-wise error between target and generated images. <br>
-Successfully recreated famous paintings like Van Gogh's Starry Night and Signac's Antibes, with GPU optimization enabling real-time generation and video export of the creation process.<br><br>
+<div class="video-wrap">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/b_EqgPfkqOU"
+    title="Generation process video"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
+
+<br><br>
 
 - **AI Model for Agent Selection and Scoring - CLGP**<br>
 [GitHub](https://github.com/EtiNL/Ebiose_CLGP) | [Presentation](/assets/pdf/Presentation_Ebiose.pdf)<br>
