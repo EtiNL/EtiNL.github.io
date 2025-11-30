@@ -4,7 +4,7 @@ title: Academic research projects
 permalink: /Academic_research/
 ---
 
-# Academic research projects
+# Research projects
 
 ---
 

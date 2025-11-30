@@ -27,13 +27,12 @@ Studying generalization bounds and performance characteristics of homogeneous Ne
 ---
 
 ## Skills
+**<u>Data Science</u>:** Neural architectures for PDEs, PAC learnability and Rademacher bounds, Optimization, Bayesian Learning, NLP, Computer Vision, Reinforcement Learning, HPC, Fairness & Privacy.
 
-**Data Science:** Neural architectures for PDEs, PAC learnability and Rademacher bounds, Optimization, Bayesian Learning, NLP, Computer Vision, Reinforcement Learning, HPC, Fairness & Privacy.
+**<u>Mathematics</u>:** Distribution theory & PDEs, Spectral theory & Harmonic Analysis, Probabilities & Stochastic Processes, Statistics, Algebra, Analytic Number theory, Algebraic Topology & Differential Geometry, Complex Analysis.
 
-**Mathematics:** Distribution theory & PDEs, Spectral theory & Harmonic Analysis, Probabilities & Stochastic Processes, Statistics, Algebra, Analytic Number theory, Algebraic Topology & Differential Geometry, Complex Analysis.
+**<u>Programming</u>:** Python (Pandas, Scikit-learn, PyTorch, TensorFlow), Rust, SQL.
 
-**Programming:** Python (Pandas, Scikit-learn, PyTorch, TensorFlow), Rust, SQL.
+**<u>Parallel & GPU</u>:** Open MPI, CUDA.
 
-**Parallel & GPU:** Open MPI, CUDA.
-
-**Languages:** French — native; English — TOEIC 970/990 (2025).
+**<u>Languages</u>:** French — native; English — TOEIC 970/990 (2025).
