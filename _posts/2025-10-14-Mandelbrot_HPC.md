@@ -12,7 +12,7 @@ This post summarizes a project completed for my M2 High Performance Computing cl
   <img src="/assets/img/HPC_mandelbrot/mandel.png" alt="Mandelbrot set — cover" width="70%">
 </p>
 
-[Download the full report (PDF)]({{ "/assets/pdf/report_mandelbrot_project.pdf" | relative_url }}){:target="_blank"}
+[Download the full report (PDF)]({{ "/assets/pdf/coursework/report_mandelbrot_project.pdf" | relative_url }}){:target="_blank"}
 
 ## TLDR
 - Sequential baseline (1 process) renders a $1000\times1000$ image in $\approx 2.31\,\text{s}$.

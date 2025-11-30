@@ -11,7 +11,7 @@ toc: true
 Summary of my 2017–2018 pure mathematics M1 research project (Université Paris Saclay).
 
 <p align="center">
-  <img src="/assets/img/Large_sieve/Complex_zeta.jpg" alt="Zeta function" width="60%">
+  <img src="/assets/img/Large_sieve/Complex_zeta.jpg" alt="Zeta function" width="50%">
 </p>
 
 [Download the full report (PDF) (in french)]({{ "/assets/pdf/Le_grand_crible__sa_forme_analytique.pdf" | relative_url }}){:target="_blank"}

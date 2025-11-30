@@ -1,12 +1,9 @@
 - title: GitHub
   url: https://github.com/EtiNL
   icon: fab fa-github
-- title: CV
-  url: /assets/pdf/cv_lanzeray_etienne.pdf
-  icon: fas fa-file-pdf
-- title: LinkedIn
-  url: https://www.linkedin.com/in/etienne-lanzeray-036529160
-  icon: fab fa-linkedin
 - title: Email
   url: mailto:etienne.lanzeray@gmail.com
   icon: fas fa-envelope
+- title: LinkedIn
+  url: https://www.linkedin.com/in/etienne-lanzeray-036529160
+  icon: fab fa-linkedin
