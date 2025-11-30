@@ -7,7 +7,10 @@ permalink: /personal_projects/
 # Personal Projects
 
 - **[Rust + CUDA Ray-Marching Engine](/2025/06/12/Raymarching-Engine.html)**<br>
-Real-time ray marching engine that renders procedural geometry entirely on the GPU. Combines Rust for safe host-side code with custom CUDA kernels for parallel evaluation of signed distance functions.<br><br>
+Real-time ray marching engine that renders procedural geometry entirely on the GPU. Combines Rust for safe host-side code with custom CUDA kernels for parallel evaluation of signed distance functions.<br>
+<p align="center">
+  <img src="/assets/img/Xor_engine/Xor_menger.png" alt="Menger sponge" width="40%">
+</p><br>
 
 - **Evolutionary Image Generation with GPU-Accelerated Particle Placement**<br>
 [GitHub](https://github.com/EtiNL/Evolution_generated_images)<br>
